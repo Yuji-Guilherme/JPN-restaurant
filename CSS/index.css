@@ -1,0 +1,20 @@
+@import url(header.css);
+@import url(home.css);
+@import url(nav.css);
+
+:root{    
+    --bg-color: #F3F4F8;
+    --bg-nav: #000;
+    --bg-home: #000;
+    --font: times;
+    --font-color: #000;
+    --font-color-off: rgb(102, 102, 102);
+    --home-title-color: #F3F4F8;
+    --home-subtitle-color: #dadbdd;
+    --font-color-nav: #F3F4F8;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-family: var(--font);
+}

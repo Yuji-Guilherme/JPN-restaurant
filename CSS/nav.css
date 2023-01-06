@@ -1,0 +1,50 @@
+nav {
+    background-color: var(--bg-nav);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+nav::before {
+    content: '';
+    background-image: url(/img/bg-nav.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    opacity: 0.3;
+    position: absolute;
+}
+
+
+.navbar {
+    height: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar__item > a {
+    color: var(--font-color-nav);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.navbar__item > a::after {
+    content: "";
+    background-color: var(--font-color-nav);
+    height: 1px;
+    width: 0%;
+    left: 0;
+    bottom: -1px; 
+    position: absolute;
+}
+
+.navbar__item > a:hover::after {
+    width: 100%;
+    transition-duration: 0.3s;
+}
