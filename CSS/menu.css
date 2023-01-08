@@ -1,0 +1,13 @@
+.menu__title {
+    text-transform: uppercase;
+}
+
+.menu__list > li {
+    text-transform: lowercase;
+    font-style: normal;
+    line-height: 1.8;
+}
+
+.menu__list > li::first-letter {
+    text-transform: uppercase;
+}

@@ -1,20 +1,12 @@
-.restaurant__img {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
 .img__container {
     background-color: var(--bg-home);
-    height: var(--frame-height);
     width: var(--frame-width);
+    height: 80vh;
+    margin: auto;
     overflow: hidden;
 }
 
 .img__container > img {
-    width: 100%;
-    object-position: 50% -80px;
-    opacity: 0.6;
+    object-position: left -80px;
+    opacity: 0.8;
 }

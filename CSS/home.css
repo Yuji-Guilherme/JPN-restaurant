@@ -1,6 +1,7 @@
-.home {
-    height: 100vh;
-    display: flex;
+.home__content {
+    background-color: var(--bg-home);
+    opacity: 0.98;
+    position: relative;
 }
 
 .home__content::before {
@@ -14,17 +15,6 @@
     z-index: -1;
 }
 
-.home__content {
-    background-color: var(--bg-home);
-    height: var(--frame-height);
-    width: var(--frame-width);
-    opacity: 0.95;
-    margin:auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
-}
 .logo {
     background-color: none;
     border-bottom: solid 1px var(--primary-font-color);

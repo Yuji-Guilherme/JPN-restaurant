@@ -7,9 +7,9 @@
     justify-content: space-evenly;
 }
 
-.welcome > h2 {
+.welcome__title {
     color: var(--primary-font-color);
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -17,7 +17,7 @@
     position: relative;
 }
 
-.welcome > h2::before {
+.welcome__title::before {
     content: '';
     background-color: var(--primary-font-color);
     --border-size: 70%;
@@ -28,7 +28,8 @@
     position: absolute;
 }
 
-.welcome > h3 {
+
+.welcome__subtitle {
     color: var(--secondary-font-color);
     font-style: italic;
     font-weight: 300;

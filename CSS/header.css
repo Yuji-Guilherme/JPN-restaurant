@@ -1,6 +1,7 @@
 header {
     font-family: var(--font);
-    height: 15vh;
+    background-color: var(--bg-color);
+    height: 12vh;
     width: 100%;
     padding: 0 30px;
     display: flex;
