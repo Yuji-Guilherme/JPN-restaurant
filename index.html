@@ -9,14 +9,14 @@
 </head>
 <body>
     <header>
-        <button class="menu__btn" id="menu-btn">Menu</button>
+        <button class="menu__btn" id="menu-btn" aria-expanded="false" aria-controls="navbar" aria-haspopup="true" aria-label="open menu">Menu</button>
         <a href="#home" class="logo__header" data-logo="">
             <h1 class="header__title">JPN</h1>
             <h2 class="header__subtitle">japan</h2>
         </a>
     </header>
     <nav id="navbar">
-        <ul class="navbar" >
+        <ul class="navbar" role="menu">
             <li class="navbar__item" data-navBtn=""><a href="#home">Home</a></li>
             <li class="navbar__item" data-navBtn=""><a href="#about">About</a></li>
             <li class="navbar__item" data-navBtn=""><a href="#menu">Menu</a></li>
