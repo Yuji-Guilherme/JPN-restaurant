@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap');
 @import url(header.css);
 @import url(home.css);
 @import url(nav.css);
@@ -12,14 +13,19 @@
     --bg-nav: #000;
     --bg-home: #000;
     --bg-card: #080808;
-    --font: times;
-    --btn-color: #000;
+    --font: Source Serif 4;
+    --logo-header-color: #080808;
+    --btn-color: #080808;
     --btn-color-off: #616161;
     --primary-font-color: #F6F6F6;
     --secondary-font-color: #dddddd;
     --font-color-nav: #f6f6f6;
     --frame-height: 75vh;
     --frame-width: 85vw;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body{
@@ -45,7 +51,7 @@ body{
 
 .card__title {
     color: var(--primary-font-color);
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 1em;
@@ -53,6 +59,7 @@ body{
 
 .card__subtitle {
     color: var(--secondary-font-color);
+    font-size: 1.1em;
     font-weight: 300;
     letter-spacing: 1px;
     margin-bottom: 1em;
@@ -60,11 +67,32 @@ body{
 
 .card__p {
     color: var(--secondary-font-color);
-    font-size: .9em;
-    font-style: italic;
+    font-size: .95em;
     font-weight: 300;
     text-align: center;
     letter-spacing: 1px;
     line-height: 1.6;
     width: 50%;
+}
+
+[data-anime], [data-logo] {
+    opacity: 0;
+    transition: .3s;
+}
+
+[data-anime="top"], [data-logo] {
+    transform: translate(0, -80px);
+}
+
+[data-anime="left"] {
+    transform: translate(-50px, 0);
+}
+
+[data-anime="right"] {
+    transform: translate(50px, 0);
+}
+
+[data-anime].animate, [data-logo].animate {
+    opacity: 1;
+    transform: translate(0, 0);
 }

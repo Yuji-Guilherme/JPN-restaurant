@@ -4,10 +4,11 @@ header {
     height: 12vh;
     width: 100%;
     padding: 0 30px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
 .menu__btn {
@@ -15,9 +16,11 @@ header {
     color: var(--btn-color-off);
     background-color: transparent;
     text-transform: uppercase;
+    font-size: 1.1em;
     font-weight: 300;
     letter-spacing: 1px;
     border: none;
+    justify-self: start;
     position: relative;
 }
 
@@ -29,7 +32,7 @@ header {
 
 .menu__btn::after {
     content: "";
-    background-color: var(--btn-color);
+    background-color: currentColor;
     height: 1px;
     width: 0%;
     left: 0;
@@ -40,4 +43,36 @@ header {
 .menu__btn:hover::after {
     width: 100%;
     transition-duration: 0.3s;
+}
+
+.menu__btn.active {
+    color: var(--btn-color);
+}
+
+.logo__header {
+    background-color: none;
+    border-bottom: solid 1px var(--logo-header-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-self: center;
+    padding-bottom: 10px;
+    margin: 0 auto 10px auto;
+}
+
+.header__title{
+    color: var(--logo-header-color);
+    text-transform: uppercase;
+    font-size: 2.3em;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.header__subtitle{
+    color: var(--logo-header-color);
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: -8px;
 }

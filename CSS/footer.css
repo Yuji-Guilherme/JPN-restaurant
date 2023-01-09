@@ -9,7 +9,8 @@
 
 .footer__title {
     color: var(--primary-font-color);
-    font-size: .8em;
+    letter-spacing: 2px;
+    font-size: .85em;
     font-weight: 400;
     text-transform: uppercase;
 }

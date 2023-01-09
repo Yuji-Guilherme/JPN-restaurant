@@ -4,8 +4,7 @@
 
 .menu__list > li {
     text-transform: lowercase;
-    font-style: normal;
-    line-height: 1.8;
+    line-height: 2.2;
 }
 
 .menu__list > li::first-letter {
