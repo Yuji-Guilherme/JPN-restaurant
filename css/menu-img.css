@@ -13,3 +13,17 @@
     height: 100%;
     object-fit: cover;
 }
+
+@media only screen and (max-device-width : 480px) {
+    .menu__image__pg.pg{
+        height: auto;
+    }
+
+    .menu__image__container {
+        height: auto;
+        display: block;
+    }
+    .menu__image__container > img:nth-last-child(n+2) {
+        margin-bottom: 40px;
+    }
+}

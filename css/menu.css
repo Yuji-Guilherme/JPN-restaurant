@@ -10,3 +10,28 @@
 .menu__list > li::first-letter {
     text-transform: uppercase;
 }
+
+@media only screen and (max-device-width : 1024px) {
+    .menu__list > li {
+        line-height: 1.7;
+    }
+}
+
+@media only screen and (max-device-width : 480px) {
+    .menu__pg.pg {
+        height: auto;
+    }
+    
+    .menu__container.card {
+        height: auto;
+        display: block;
+    }
+
+    .menu__list {
+        margin: 0 auto;
+    }
+
+    .menu__list > li {
+        margin-bottom: 15px;
+    }
+}

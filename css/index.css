@@ -6,6 +6,7 @@
 @import url(restaurant.css);
 @import url(menu-img.css);
 @import url(menu.css);
+@import url(contact.css);
 @import url(footer.css);
 
 :root{    
@@ -95,4 +96,46 @@ body{
 [data-anime].animate, [data-logo].animate {
     opacity: 1;
     transform: translate(0, 0);
+}
+
+@media only screen and (max-device-width : 1024px) {
+    .card__p {
+        width: 75%;
+    }
+
+    .card__subtitle {
+        font-size: 1.2em;
+        text-align: center;
+        margin: 20px 15px;
+    }
+}
+
+@media only screen and (max-device-width : 480px) {
+    .pg {
+        height: 90vh;
+    }
+
+    .card {
+        height: 70vh;
+    }
+
+    [data-anime="top"] {
+        transform: translate(0, 0);
+    }
+
+    [data-anime="left"] {
+        transform: translate(0, 0);
+    }
+
+    [data-anime="right"] {
+        transform: translate(0, 0);
+    }
+
+    .contact__service.card__subtitle, .contact__address.card__subtitle, .contact__fone.card__subtitle {
+        font-size: 1em;
+    }
+
+    .map__content.card {
+        height: 80vh;
+    }
 }

@@ -76,3 +76,29 @@ header {
     letter-spacing: 2px;
     margin: -8px;
 }
+
+@media only screen and (max-device-width : 1024px) {
+    .menu__btn {
+        font-size: 1em;
+    }
+
+    .logo__header {
+        margin-bottom: 0;
+    }
+
+    .header__title {
+        font-size: 2em;
+    }
+
+}   
+
+@media only screen and (max-device-width : 480px) {
+    header {
+            height: 10vh;
+            padding: 0;
+            overflow-x: hidden;
+    }
+    .menu__btn {
+            justify-self: center;
+    }
+}

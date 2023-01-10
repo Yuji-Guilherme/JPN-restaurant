@@ -47,3 +47,9 @@ nav {
     transform: translate(0, 0);
     opacity: 1;
 }
+
+@media only screen and (max-device-width : 480px) {
+    nav {
+        width: 100%;
+    }
+}

@@ -10,3 +10,9 @@
     object-position: left -80px;
     opacity: 0.8;
 }
+
+@media only screen and (max-device-width : 480px) {
+    .restaurant__img.pg {
+        display: none;
+    }
+}
