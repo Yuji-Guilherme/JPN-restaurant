@@ -3,24 +3,23 @@
 @import url(home.css);
 @import url(nav.css);
 @import url(welcome.css);
-@import url(restaurant.css);
+@import url(restaurant-img.css);
 @import url(menu-img.css);
 @import url(menu.css);
 @import url(contact.css);
+@import url(map.css);
 @import url(footer.css);
 
 :root{    
     --bg-color: #f7f7f7;
-    --bg-nav: #000;
     --bg-home: #000;
-    --bg-card: #080808;
+    --bg-box: #080808;
     --font: Source Serif 4;
     --logo-header-color: #080808;
     --btn-color: #080808;
     --btn-color-off: #616161;
     --primary-font-color: #F6F6F6;
     --secondary-font-color: #dddddd;
-    --font-color-nav: #f6f6f6;
     --frame-height: 75vh;
     --frame-width: 85vw;
 }
@@ -34,13 +33,13 @@ body{
     font-family: var(--font);
 }
 
-.pg {
+.area {
     height: 100vh;
     display: flex;
 }
 
-.card {
-    background-color: var(--bg-card);
+.box {
+    background-color: var(--bg-box);
     height: var(--frame-height);
     width: var(--frame-width);
     margin: auto;
@@ -50,7 +49,7 @@ body{
     justify-content: center;
 }
 
-.card__title {
+.box__title {
     color: var(--primary-font-color);
     font-size: 1.5em;
     font-weight: 400;
@@ -58,7 +57,7 @@ body{
     margin-bottom: 1em;
 }
 
-.card__subtitle {
+.box__subtitle {
     color: var(--secondary-font-color);
     font-size: 1.1em;
     font-weight: 300;
@@ -66,7 +65,7 @@ body{
     margin-bottom: 1em;
 }
 
-.card__p {
+.box__p {
     color: var(--secondary-font-color);
     font-size: .95em;
     font-weight: 300;
@@ -99,11 +98,11 @@ body{
 }
 
 @media only screen and (max-device-width : 1024px) {
-    .card__p {
+    .box__p {
         width: 75%;
     }
 
-    .card__subtitle {
+    .box__subtitle {
         font-size: 1.2em;
         text-align: center;
         margin: 20px 15px;
@@ -111,11 +110,11 @@ body{
 }
 
 @media only screen and (max-device-width : 480px) {
-    .pg {
+    .area {
         height: 90vh;
     }
 
-    .card {
+    .box {
         height: 70vh;
     }
 
@@ -129,13 +128,5 @@ body{
 
     [data-anime="right"] {
         transform: translate(0, 0);
-    }
-
-    .contact__service.card__subtitle, .contact__address.card__subtitle, .contact__fone.card__subtitle {
-        font-size: 1em;
-    }
-
-    .map__content.card {
-        height: 80vh;
     }
 }

@@ -1,10 +1,10 @@
-.home__content {
+.home__box {
     background-color: var(--bg-home);
     opacity: 0.98;
     position: relative;
 }
 
-.home__content::before {
+.home__box::before {
     content: '';
     background-image: url(/img/bg-home.jpg);
     background-position: center;

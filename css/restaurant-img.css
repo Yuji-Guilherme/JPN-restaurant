@@ -1,4 +1,4 @@
-.img__container {
+.restaurant__img__box {
     background-color: var(--bg-home);
     width: var(--frame-width);
     height: 80vh;
@@ -6,13 +6,13 @@
     overflow: hidden;
 }
 
-.img__container > img {
+.restaurant__img__box > img {
     object-position: left -80px;
     opacity: 0.8;
 }
 
 @media only screen and (max-device-width : 480px) {
-    .restaurant__img.pg {
+    .restaurant__img__area.area {
         display: none;
     }
 }

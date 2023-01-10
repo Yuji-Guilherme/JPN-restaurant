@@ -1,0 +1,5 @@
+@media only screen and (max-device-width : 480px) {
+    .contact__service.box__subtitle, .contact__address.box__subtitle, .contact__fone.box__subtitle {
+        font-size: 1em;
+    }
+}

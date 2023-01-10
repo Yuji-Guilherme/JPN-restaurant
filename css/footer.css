@@ -1,5 +1,5 @@
-.footer {
-    background-color: var(--bg-card);
+.footer__area {
+    background-color: var(--bg-box);
     height: 6vh;
     display: flex;
     align-items: center;

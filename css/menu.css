@@ -18,11 +18,11 @@
 }
 
 @media only screen and (max-device-width : 480px) {
-    .menu__pg.pg {
+    .menu__area.area {
         height: auto;
     }
     
-    .menu__container.card {
+    .menu__box.box {
         height: auto;
         display: block;
     }

@@ -1,4 +1,4 @@
-header {
+.header__area {
     font-family: var(--font);
     background-color: var(--bg-color);
     height: 12vh;
@@ -93,12 +93,11 @@ header {
 }   
 
 @media only screen and (max-device-width : 480px) {
-    header {
-            height: 10vh;
-            padding: 0;
-            overflow-x: hidden;
+    .header__area {
+        height: 10vh;
+        padding: 0;
     }
     .menu__btn {
-            justify-self: center;
+        justify-self: center;
     }
 }

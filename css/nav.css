@@ -1,4 +1,4 @@
-nav {
+.navbar__area {
     background-color: var(--bg-color);
     width: 30%;
     height: 100vh;
@@ -11,7 +11,7 @@ nav {
     transition: .5s;
 }
 
-.navbar {
+.navbar__box {
     height: 50%;
     margin: 0 auto;
     display: flex;
@@ -20,7 +20,7 @@ nav {
     justify-content: space-evenly;
 }
 
-.navbar__item > a {
+.navbar__btn > a {
     color: var(--btn-color);
     text-transform: uppercase;
     font-size: 1.2em;
@@ -28,7 +28,7 @@ nav {
     position: relative;
 }
 
-.navbar__item > a::after {
+.navbar__btn > a::after {
     content: "";
     background-color: currentColor;
     height: 1px;
@@ -38,7 +38,7 @@ nav {
     position: absolute;
 }
 
-.navbar__item > a:hover::after {
+.navbar__btn > a:hover::after {
     width: 100%;
     transition-duration: 0.3s;
 }
@@ -49,7 +49,7 @@ nav {
 }
 
 @media only screen and (max-device-width : 480px) {
-    nav {
+    .navbar__area {
         width: 100%;
     }
 }

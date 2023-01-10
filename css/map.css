@@ -1,0 +1,5 @@
+@media only screen and (max-device-width : 480px) {
+    .map__box.box {
+        height: 80vh;
+    }
+}
